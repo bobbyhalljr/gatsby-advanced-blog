@@ -2,7 +2,7 @@ import React, { useReducer, useCallback, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Link, navigate } from 'gatsby';
 import Toggle from 'react-toggle';
-import { FaCaretDown, FaSearch, FaTags } from 'react-icons/fa';
+import { FaSearch, FaTags, FaRegMoon, FaSun } from 'react-icons/fa';
 import {
   Hamburger,
   MovableFaCaretDown,
@@ -10,7 +10,7 @@ import {
   List,
   SubMenu,
   ListMenu,
-  Home,
+  // Home,
   StyledLink,
   SearchBarWrapper,
   SearchBar,
@@ -126,7 +126,8 @@ const Gnb = ({
           <ul>
             <ListMenu>
               <StyledLink to="/" onClick={toggleMenu}>
-                <Home />
+                {/* <Home /> */}
+                Home
               </StyledLink>
             </ListMenu>
             <ListMenu>
@@ -218,8 +219,8 @@ const Gnb = ({
         <Toggle
           defaultChecked={isDracula}
           icons={{
-            checked: <span role="img" aria-label="change-theme">🌙</span>,
-            unchecked: <span role="img" aria-label="change-theme">☀️</span>,
+            checked: <span role="img" aria-label="change-theme"><FaRegMoon /></span>,
+            unchecked: <span role="img" aria-label="change-theme"><FaSun style={{ color: '#fff' }} /></span>,
           }}
           onChange={toggleTheme}
         />
@@ -235,14 +236,15 @@ const Gnb = ({
       <List>
         <ListMenu>
           <StyledLink to="/">
-            <Home />
+            {/* <Home /> */}
+            Home
           </StyledLink>
         </ListMenu>
         <ListMenu>
-          <StyledLink to="/pages/1" className={isPost ? 'active' : ''}>
+          <StyledLink to="/pages/1" >
             Posts
-            &nbsp;
-            {categories.length > 0 ? <FaCaretDown /> : null}
+            {/* &nbsp; */}
+            {/* {categories.length > 0 ? <FaCaretDown /> : null} */}
           </StyledLink>
           <SubMenu>
             <div>

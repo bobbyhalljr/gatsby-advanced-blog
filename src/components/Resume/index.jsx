@@ -1,10 +1,10 @@
 import React, { useCallback, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import { FaPrint, FaGithub, FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import { FaPrint, FaGithub, FaLinkedin } from 'react-icons/fa';
 import Clearfix from '~/components/Common/Clearfix';
-import { PREFIX, AUTHOR, EMAIL, GITHUB_ID, TWITTER_ID, FACEBOOK_ID, LINKEDIN_ID } from '~/constants';
-import * as profileUrl from '~/resources/me.png';
+import { PREFIX, AUTHOR, EMAIL, GITHUB_ID, LINKEDIN_ID } from '~/constants';
+import * as profileUrl from '~/resources/bobby.jpg';
 import { Wrapper, BasicInformation, SocialInformation, MDInformation, Button } from './styled';
 
 const Resume = ({
@@ -72,7 +72,7 @@ const Resume = ({
               <FaGithub />
             </a>
           ) : null}
-          {TWITTER_ID ? (
+          {/* {TWITTER_ID ? (
             <a
               href={`https://twitter.com/${TWITTER_ID}`}
               target="_blank"
@@ -89,7 +89,7 @@ const Resume = ({
             >
               <FaFacebook />
             </a>
-          ) : null}
+          ) : null} */}
           {LINKEDIN_ID ? (
             <a
               href={`https://www.linkedin.com/in/${LINKEDIN_ID}/`}

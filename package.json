@@ -76,7 +76,7 @@
     "prismjs": "^1.15.0"
   },
   "scripts": {
-    "precommit": "lint-staged",
+    "precommit": "",
     "lint": "eslint --ext .js,.jsx --config .eslintrc.js",
     "dev": "gatsby develop",
     "clean": "rm -rf .cache && rm -rf public",

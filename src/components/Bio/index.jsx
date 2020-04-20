@@ -1,6 +1,8 @@
 import React from 'react';
-import { AUTHOR, DESCRIPTION, SITE_URL, PROFILE } from '~/constants';
+import { AUTHOR, DESCRIPTION, SITE_URL } from '~/constants';
 import { Wrapper } from './styled';
+
+import image from '../../resources/images/bobby.jpg';
 
 const Bio = () => (
   <Wrapper>
@@ -10,7 +12,7 @@ const Bio = () => (
       rel="noreferrer noopener"
     >
       <img
-        src={PROFILE}
+        src={image}
         width="48"
         height="48"
         alt=""
